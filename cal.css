@@ -1,0 +1,118 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  :root {
+    --primary-color: rgb(61, 164, 243);
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  
+  .container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the calculator title */
+  .container h1 {
+    font-size: 24px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    text-align: right;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+    outline: none;
+  }
+  
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  
+  button {
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+  }
+  
+  
+  .operator {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+ 
+  button:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the equals button */
+  #equals {
+    grid-column: span 4;
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  
+  #clear {
+    background-color: #ff4444;
+    color: white;
+  }
+  
+
+.operator {
+    background-color: var(--primary-color);
+    color: rgb(84, 2, 2);
+  }
+  
+
+  button:hover {
+    background-color: #ccc;
+  }
+  
+  
+  #equals {
+    grid-column: span 4;
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  
+  #clear {
+    background-color: #e60a0a;
+    color: white;
+  }
+  
